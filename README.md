@@ -1,4 +1,4 @@
-# Teste Técnico
+# Teste
 
 ## Motivações tecnologias escolhidas ⚒️
 
