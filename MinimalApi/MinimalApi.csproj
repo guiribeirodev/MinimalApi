@@ -22,4 +22,8 @@
       <_Parameter1>$(AssemblyName)Tests</_Parameter1>
     </AssemblyAttribute>
   </ItemGroup>
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\assets\index-CH-ti2YY.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\assets\index-COBQQuib.css" />
+  </ItemGroup>
 </Project>

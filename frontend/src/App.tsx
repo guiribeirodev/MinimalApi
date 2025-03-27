@@ -112,6 +112,8 @@ function App() {
   };
 
   const addTransaction = async () => {
+    const currentUser = users.find(user => user.id === newTransaction.user_id);
+
     if (!newTransaction.description || !newTransaction.value){
       alert("Preencha os campos descrição e valor.");
       return;
@@ -121,8 +123,17 @@ function App() {
       alert("O valor precisa ser um número positivo.");
       return;
     }
+    if (!currentUser) {
+      alert("Usuário não encontrado.");
+      return;
+    }
 
-    try {
+    if (currentUser.age < 18 && newTransaction.operation == "income") {
+      alert("Usuários menores de 18 anos não podem adicionar receitas.");
+      return;
+    }
+
+  try {
       const response = await fetch("http://127.0.0.1:8000/transactions/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
