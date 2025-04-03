@@ -204,7 +204,7 @@ function App() {
 
   return (
     <div className="flex flex-col items-center p-6 min-h-screen">
-      <h1 className="text-6xl text-white font-bold mb-6">MAXIPROD</h1>
+      <h1 className="text-6xl text-white font-bold mb-6">MinimalApiCrud</h1>
       <button
         className="mb-4 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600"
         onClick={() => setShowUserModal(true)}

@@ -1,26 +1,12 @@
-# Teste
+# MinimalApi
 
-## Motivações tecnologias escolhidas ⚒️
-
-### Back-end ⚙️
-
-- C#/.Net - Segui uma versão simplificada de uma Minimal Api.
-- Banco de dados SQLite - Mantive o mesmo banco por Simplicidade de implementação.
-- Entity Framework - Mantive algo relacionado ao projeto em Python, mas desta vez utilizando o EF.
-
-
-### Front-end 🪞
-
-- React - Escolhido com base no que foi sugerido na descrição do teste.
-- Tailwind - Simplicidade e familiaridade.
-
-Mantive o mesmo Front-End
+Modelo de um CRUD de um sistema de controle de gastos residenciais utilizando MinimalApi.
 
 ## Como rodar o projeto
 
-Necessário ter a ferramenta Dotnet ef para rodar as Migrations, https://www.nuget.org/packages/dotnet-ef
+Necessário ter a ferramenta Dotnet ef para rodar as Migrations, <https://www.nuget.org/packages/dotnet-ef>
 
-Estando na pasta raíz, basta executar o comando que irá gerar o Banco de Dados:
+Estando na pasta raiz, basta executar o comando que irá gerar o Banco de Dados:
 
 ```bash
 dotnet ef database update --project MinimalApi/
